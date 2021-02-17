@@ -1,0 +1,24 @@
+
+state={
+	id=82
+	name="STATE_82"
+	manpower = 941500
+	
+	state_category = rural
+
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 1
+		}
+		add_core_of = GER
+		1939.5.5 = {
+		    owner = TUR
+		}
+	}
+
+	provinces={
+		646 662 3649 9606 11592 11608 
+	}
+}

@@ -1,0 +1,24 @@
+
+state={
+	id=655
+	name="STATE_655"
+	manpower = 1
+	
+	state_category = pastoral
+	history={
+		owner = TUR
+		add_core_of = SOV
+		add_claim_by = JAP
+		buildings = {
+			infrastructure = 7
+			air_base = 1
+		}
+        1939.4.4 = {
+		owner = JAP
+        }
+	}
+
+	provinces={
+		855 1742 1755 
+	}
+}

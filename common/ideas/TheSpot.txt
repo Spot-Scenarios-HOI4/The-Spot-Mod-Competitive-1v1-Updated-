@@ -1,0 +1,53 @@
+ideas = {
+    country = {
+        trade_unionism = {
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+            picture = generic_pp_unity_bonus
+
+            modifier = {
+				production_speed_buildings_factor = -2000
+				
+                political_power_cost = 2
+                conscription_factor = -1
+
+                research_speed_factor = -1000
+                enemy_justify_war_goal_time = 500
+
+                join_faction_tension = 2
+                lend_lease_tension = 2
+
+                send_volunteers_tension = 2
+                guarantee_tension = 2
+            	ai_badass_factor = 0
+                ai_get_ally_desire_factor = -500
+
+                industrial_capacity_factory = -10000
+                industrial_capacity_dockyard = -10000
+                compliance_growth_on_our_occupied_states = 1000
+            }
+        }
+    }
+
+    country = {   
+
+        hyper_naval_construction = {
+         allowed = {
+             always = no
+         }
+
+          removal_cost = -1
+          picture = generic_pp_unity_bonus
+
+          modifier = {
+
+              industrial_capacity_dockyard = 5.0
+		      navy_refit_speed = 10.0
+          
+            }
+        }
+    }
+}

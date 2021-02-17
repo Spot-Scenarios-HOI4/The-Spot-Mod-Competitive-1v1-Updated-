@@ -1,0 +1,29 @@
+
+state={
+	id=387
+	name="STATE_387"
+	manpower = 1
+	
+	state_category = megalopolis
+	
+	resources={
+	}
+
+	history={
+		owner = TUR
+		buildings = {
+			industrial_complex = 20
+			infrastructure = 7
+		}
+		add_core_of = USA
+        1939.4.4 = {
+		owner = USA
+        }
+	}
+
+
+	provinces={
+		1789 1832 3781 4778 7845 9616 9695 10556 10602 10672 12124 12535 12607 
+	}
+	
+}

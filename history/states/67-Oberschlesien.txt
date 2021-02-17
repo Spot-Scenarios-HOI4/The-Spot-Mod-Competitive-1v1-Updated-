@@ -1,0 +1,20 @@
+
+state={
+	id=67
+	name="STATE_67"
+	manpower = 1402591
+	
+	state_category = city
+
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 7
+		}
+		add_core_of = GER  1939.5.5 = { owner = TUR }
+	}
+
+	provinces={
+		479 6512 9457 9511 11467 
+	}
+}

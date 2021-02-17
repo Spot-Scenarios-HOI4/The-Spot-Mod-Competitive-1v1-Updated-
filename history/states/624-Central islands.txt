@@ -1,0 +1,35 @@
+state=
+{
+	id=624
+	name="STATE_624"
+	manpower = 1
+	state_category = town
+	
+	resources={
+	oil = 10
+	steel = 20
+	tungsten = 10
+	chromium = 10
+	rubber = 10
+	aluminium = 10
+	}
+	
+	history=
+	{
+		owner = TUR
+		buildings = {
+			infrastructure = 7
+		}
+		
+		victory_points = {
+			4288 1 
+		}
+		add_core_of = PHI
+        1939.4.4 = {
+		owner = JAP
+        }
+	}
+	provinces={
+		1372 4228 4288 4377 7307 10272 10306 12279 
+	}
+}

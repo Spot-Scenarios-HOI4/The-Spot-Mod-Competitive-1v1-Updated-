@@ -1,0 +1,25 @@
+political_actions = {
+	USA_wargoal = {
+		
+		icon = generic_prepare_civil_war
+		
+		available = {
+			date = 1941.2.1
+		}
+		
+		fire_only_once = yes
+		
+		visible = {
+			original_tag = USA
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+			create_wargoal = {
+				type = annex_everything
+				target = JAP
+			}
+		}
+	}
+}

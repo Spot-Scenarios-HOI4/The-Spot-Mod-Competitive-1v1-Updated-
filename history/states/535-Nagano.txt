@@ -1,0 +1,32 @@
+
+state={
+	id=535
+	name="STATE_535" # Koshinetsu
+	manpower = 1
+	state_category = large_city
+	
+	resources={
+	}
+
+	history={
+		owner = TUR
+		add_core_of = JAP
+		buildings = {
+		    arms_factory = 10
+			infrastructure = 7
+
+		}
+		
+		victory_points = {
+			10032 15
+		}
+        1939.4.4 = {
+		owner = JAP
+        }
+
+	}
+
+	provinces={
+		998 7102 7217 10015 10032 
+	}
+}

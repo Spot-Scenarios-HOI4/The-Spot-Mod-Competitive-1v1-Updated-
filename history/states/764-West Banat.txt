@@ -1,0 +1,24 @@
+
+state={
+	id=764
+	name="STATE_764"
+	manpower = 585579
+	state_category = rural
+
+	history={
+		1939.5.5 = {
+		    owner = TUR
+		}
+		owner = GER
+		controller = GER
+
+		buildings = {
+			infrastructure = 7
+		}
+		add_core_of = GER
+	}
+
+	provinces={
+		614 3614 6643 11787
+	}
+}
