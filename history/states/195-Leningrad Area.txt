@@ -1,0 +1,37 @@
+
+state={
+	id=195
+	name="STATE_195"
+	manpower = 3750158
+	
+	state_category = metropolis
+
+	history={
+		owner = SOV
+		victory_points = {
+			3151 30.0
+		}
+		buildings = {
+			infrastructure = 7
+			dockyard = 8
+			air_base = 10
+			3151 ={
+				naval_base = 10
+				
+			}
+		}
+		add_core_of = SOV
+		1939.1.1 = {
+			buildings = {
+				arms_factory = 4
+			}
+		}
+		1939.5.5 = {
+		    owner = TUR
+		}
+	}
+
+	provinces={
+		79 149 3151 6174 11068 
+	}
+}

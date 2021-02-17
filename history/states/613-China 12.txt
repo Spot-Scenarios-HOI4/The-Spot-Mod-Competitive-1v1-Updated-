@@ -1,0 +1,49 @@
+
+state={
+	id=613
+	name="STATE_613" # Shanghai
+	manpower = 1
+	
+	resources={
+	oil = 10
+	steel = 20
+	tungsten = 10
+	chromium = 10
+	rubber = 10
+	aluminium = 10
+	}
+	
+	state_category = large_city
+	
+	history={
+		owner = TUR
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 7
+			air_base = 6
+			7014 = {
+				naval_base = 6
+				
+				
+			}
+		}
+		victory_points = {
+			11913 20 
+		}
+		victory_points = {
+			7014 10
+		}
+
+		1938.10.25 = {
+			
+		}
+        1939.4.4 = {
+		owner = JAP
+        }
+	}
+
+	provinces={
+		996 1089 4091 7014 7120 10034 10076 11913 11928 11982 12052 12076 13142 
+	}
+}

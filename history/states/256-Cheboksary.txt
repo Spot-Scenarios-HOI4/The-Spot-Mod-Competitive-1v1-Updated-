@@ -1,0 +1,32 @@
+
+state={
+	id=256
+	name="STATE_256"
+	manpower = 1572061
+	resources = {
+		steel = 300
+		tungsten = 200
+		oil = 300
+		rubber = 150
+		chromium = 200
+		aluminium = 200
+	}
+	
+	state_category = town
+
+	history={
+		owner = SOV
+		buildings = {
+			arms_factory = 12
+			infrastructure = 10
+		}
+		add_core_of = SOV
+		1939.5.5 = {
+		    owner = TUR
+		}
+	}
+
+	provinces={
+		282 325 3282 3315 3361 6253 6307 6312 6357 6372 6403 9244 9259 9270 9280 9305 9307 9373 9381 9390 9402 11255 11263 11286 11356 11387 
+	}
+}

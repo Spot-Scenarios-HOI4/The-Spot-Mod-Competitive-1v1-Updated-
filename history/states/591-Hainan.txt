@@ -1,0 +1,48 @@
+state={
+	id=591
+	name="STATE_591"
+	manpower = 1
+	state_category = town
+    
+	resources={
+	oil = 10
+	steel = 20
+	tungsten = 10
+	chromium = 10
+	rubber = 10
+	aluminium = 10
+	}
+	
+	history={
+		owner = TUR
+		add_core_of = GXC
+		add_core_of = CHI
+		add_core_of = PRC
+		
+		victory_points = {
+			1070 1 
+		}
+		
+		buildings = {
+			infrastructure = 7
+			air_base = 1
+			1070 = {
+				naval_base = 2
+			}
+
+		}
+
+		1938.10.25 = {
+			remove_core_of = GXC
+			owner = TUR
+			
+		}
+        1939.4.4 = {
+		owner = JAP
+        }
+	}
+
+	provinces={
+		994 1038 1070 4160 7135 11963 11990 
+	}
+}

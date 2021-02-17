@@ -1,0 +1,37 @@
+state=
+{
+	id=638
+	name="STATE_638"
+	state_category = small_island
+	manpower=1
+	
+	resources={
+	oil = 10
+	steel = 20
+	tungsten = 10
+	chromium = 10
+	rubber = 10
+	aluminium = 10
+	}
+	
+	history=
+	{
+		owner = TUR
+		buildings = {
+			infrastructure = 7
+			12140 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			12140 1
+		 }
+        1939.4.4 = {
+		owner = USA
+        }
+
+	}
+	provinces={
+		12140
+	}
+}

@@ -1,0 +1,29 @@
+state={
+	id=75
+	name="STATE_75"
+	manpower = 2598400
+
+	state_category = city
+
+	history={
+		owner = GER
+		victory_points = {
+			3569 1 
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 1
+			air_base = 5
+
+		}
+		add_core_of = GER
+		1939.5.5 = {
+		    owner = TUR
+		}
+
+	}
+
+	provinces={
+		569 3553 3569 6562 6576 6590 11511 
+	}
+}

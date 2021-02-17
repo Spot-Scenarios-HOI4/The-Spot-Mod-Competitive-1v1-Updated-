@@ -1,0 +1,31 @@
+
+state={
+	id=534
+	name="STATE_534" # Hokuriku
+	manpower = 1
+	
+	state_category = city
+
+	history={
+		owner = TUR
+		add_core_of = JAP
+		buildings = {
+		    dockyard = 10
+			arms_factory = 10
+			infrastructure = 7
+		}
+		
+		victory_points = {
+			1117 10
+		}
+        1939.4.4 = {
+		owner = JAP
+        }
+
+
+	}
+
+	provinces={
+		1117 9952 10128 11930 11989 12007 
+	}
+}

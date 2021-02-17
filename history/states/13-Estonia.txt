@@ -1,0 +1,32 @@
+
+state={
+	id=13
+	name="STATE_13"
+	manpower = 730660
+
+	state_category = town
+	history={
+		owner = SOV
+		victory_points = {
+			3152 5 
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 8
+			industrial_complex = 3
+			air_base = 2
+			3152 = {
+				naval_base = 3
+				
+			}
+		}
+		add_core_of = SOV
+		1939.5.5 = {
+		    owner = TUR
+		}
+	}
+
+	provinces={
+		83 185 308 496 567 3074 3152 3174 6201 6381 9079 11127 11291 11426 
+	}
+}
