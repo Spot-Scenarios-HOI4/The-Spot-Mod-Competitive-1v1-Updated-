@@ -7,7 +7,7 @@ army_experience = 500
 navy_experience = 100
 air_experience = 500
 set_stability = 1
-set_war_support = 1
+set_war_support = 200
 set_convoys = 1000
 set_research_slots = 4
 
@@ -54,6 +54,7 @@ set_technology = {
 		basic_medium_tank = 1 
 		CAS2 = 1
 		heavy_fighter1 = 1
+		heavy_fighter2 = 1
 		interwar_artillery = 1
 		artillery1 = 1
 		artillery2 = 1
@@ -191,7 +192,7 @@ set_popularities = {
 add_ideas = {
 	closed_economy
 	limited_conscription
-	partial_economic_mobilisation
+	war_economy
 	hyper_naval_construction
 }
 
