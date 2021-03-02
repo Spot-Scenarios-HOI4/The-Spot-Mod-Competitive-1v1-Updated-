@@ -1097,7 +1097,7 @@ focus = {
 		icon = GFX_goal_generic_production
 		x = 26
 		y = 0
-		cost = 10
+		cost = 5
 		
 		completion_reward = {
 			navy_experience = 150
@@ -1114,7 +1114,7 @@ focus = {
 		icon = GFX_goal_generic_navy_battleship
 		x = 25
 		y = 1
-		cost = 10
+		cost = 5
 		
 		prerequisite = {
 			focus = JAP_naval_industry
@@ -1135,7 +1135,7 @@ focus = {
 		icon = GFX_goal_generic_amphibious_assault
 		x = 27
 		y = 1
-		cost = 10
+		cost = 5
 
 		prerequisite = {
 			focus = JAP_naval_industry
@@ -1281,7 +1281,7 @@ focus = {
 			}
 			add_tech_bonus = {
 				bonus = 1
-				uses = 3
+				uses = 2
 				category = computing_tech
 				category = radar_tech
 			}
