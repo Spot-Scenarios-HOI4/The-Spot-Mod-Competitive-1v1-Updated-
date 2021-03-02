@@ -1100,12 +1100,7 @@ focus = {
 		cost = 5
 		
 		completion_reward = {
-			navy_experience = 150
-			add_tech_bonus = {
-				bonus = 0.5
-				uses = 1
-				category = radar_tech
-			}
+			navy_experience = 200
 		}
 	}	
 
@@ -1189,11 +1184,6 @@ focus = {
 				uses = 2
 				category = 	ca_tech
 			}
-			add_tech_bonus = {
-				bonus = 1
-				uses = 7
-				category = naval_equipment
-			}
 		}
 	}
 
@@ -1242,11 +1232,6 @@ focus = {
 				category = naval_bomber
 				category = naval_air
 			}
-			add_tech_bonus = {
-				bonus = 1
-				uses = 7
-				category = naval_equipment
-			}
 		}
 	}
 
@@ -1284,11 +1269,6 @@ focus = {
 				uses = 2
 				category = computing_tech
 				category = radar_tech
-			}
-			add_tech_bonus = {
-				bonus = 1
-				uses = 4
-				category = naval_equipment
 			}
 		}
 	}
