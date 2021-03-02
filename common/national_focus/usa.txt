@@ -1101,8 +1101,195 @@ focus = {
 		
 		completion_reward = {
 			navy_experience = 150
-			industrial_capacity_dockyard = 5.0
-			refit_speed = 10.0
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = radar_tech
+			}
 		}
 	}	
+
+	focus = {
+		id = USA_naval_doctrine
+		icon = GFX_goal_generic_navy_battleship
+		x = 25
+		y = 1
+		cost = 10
+		
+		prerequisite = {
+			focus = USA_naval_industry
+		}
+		completion_reward = {
+			add_tech_bonus = {	
+				bonus = 10
+				uses = 20
+				category = cat_base_strike
+				category = cat_trade_interdiction
+				category = cat_fleet_in_being
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_marines
+		icon = GFX_goal_generic_amphibious_assault
+		x = 27
+		y = 1
+		cost = 10
+
+		prerequisite = {
+			focus = USA_naval_industry
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = marine_tech
+			}
+		}
+	}
+
+	focus = {
+		id = USA_open_seas_focus
+		icon = GFX_goal_generic_navy_battleship
+		x = 28 
+		y = 2
+		cost = 10
+
+		prerequisite = {
+			focus = USA_naval_doctrine
+			focus = USA_marines
+
+		}
+
+		mutually_exclusive = {
+			focus = USA_carrier_focus
+			focus = USA_commerce_raiding_focus
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 2
+				category =	bb_tech
+				category = 	bc_tech
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category =	shbb_tech
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = 	dd_tech
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = 	ca_tech
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 7
+				category = naval_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = USA_carrier_focus
+		icon = GFX_goal_generic_navy_carrier
+		x = 26 
+		y = 2
+		cost = 10
+
+		prerequisite = {
+			focus = USA_naval_doctrine
+			focus = USA_marines
+
+		}
+
+		mutually_exclusive = {
+			focus = USA_open_seas_focus
+			focus = USA_commerce_raiding_focus
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 2
+				category =	cv_tech
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category =  cl_tech
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = 	dd_tech
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = computing_tech
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 3
+				category = naval_bomber
+				category = naval_air
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 7
+				category = naval_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = USA_commerce_raiding_focus
+		icon = GFX_goal_generic_navy_submarine
+		x = 24 
+		y = 2
+		cost = 10
+
+		prerequisite = {
+			focus = USA_naval_doctrine
+			focus = USA_marines
+
+		}
+
+		mutually_exclusive = {
+			focus = USA_open_seas_focus
+			focus = USA_carrier_focus
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.2
+				uses = 3
+				category =	ss_tech
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = 	dd_tech
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 3
+				category = computing_tech
+				category = radar_tech
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 4
+				category = naval_equipment
+			}
+		}
+	}
 }
