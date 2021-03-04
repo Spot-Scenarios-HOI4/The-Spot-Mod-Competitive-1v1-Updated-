@@ -31,7 +31,7 @@ focus = {
 focus = {
 	id = JAP_arty1
 	icon = GFX_goal_generic_army_artillery2
-	x = -2
+	x = -6
 	y = 1
 	relative_position_id = JAP_army
 	prerequisite = { focus = JAP_army }
@@ -50,7 +50,7 @@ focus = {
 focus = {
 	id = JAP_arty2
 	icon = GFX_goal_generic_army_artillery2
-	x = 0
+	x = -1
 	y = 1
 	relative_position_id = JAP_arty1
 	prerequisite = { focus = JAP_arty1 }
@@ -69,10 +69,10 @@ focus = {
 focus = {
 	id = JAP_arty3
 	icon = GFX_goal_generic_army_artillery2
-	x = 0
+	x = 1
 	y = 1
-	relative_position_id = JAP_arty2
-	prerequisite = { focus = JAP_arty2 }
+	relative_position_id = JAP_arty1
+	prerequisite = { focus = JAP_arty1 }
 	cost = 5
 	
 	completion_reward = {
@@ -88,7 +88,7 @@ focus = {
 focus = {
 	id = JAP_antiair
 	icon = GFX_goal_generic_construct_military
-	x = 0
+	x = -2
 	y = 1
 	cost = 5
 	prerequisite = { focus = JAP_army }
@@ -107,7 +107,7 @@ focus = {
 focus = {
 	id = JAP_antiair2
 	icon = GFX_goal_generic_construct_military
-	x = 0
+	x = 1
 	y = 1
 	cost = 5
 	prerequisite = { focus = JAP_antiair }
@@ -126,11 +126,11 @@ focus = {
 focus = {
 	id = JAP_antiair3
 	icon = GFX_goal_generic_construct_military
-	x = 0
+	x = -1
 	y = 1
 	cost = 5
-	prerequisite = { focus = JAP_antiair2 }
-	relative_position_id = JAP_antiair2
+	prerequisite = { focus = JAP_antiair }
+	relative_position_id = JAP_antiair
 	
 	completion_reward = {
 		add_tech_bonus = {
@@ -164,7 +164,7 @@ focus = {
 focus = {
 	id = JAP_antitank2
 	icon = GFX_goal_generic_army_artillery
-	x = 0
+	x = 1
 	y = 1
 	cost = 5
 	prerequisite = {focus = JAP_antitank }
@@ -183,11 +183,11 @@ focus = {
 focus = {
 	id = JAP_antitank3
 	icon = GFX_goal_generic_army_artillery
-	x = 0
+	x = -1
 	y = 1
 	cost = 5
-	prerequisite = {focus = JAP_antitank2 }
-	relative_position_id = JAP_antitank2
+	prerequisite = {focus = JAP_antitank }
+	relative_position_id = JAP_antitank
 	
 	completion_reward = {
 		add_tech_bonus = {
@@ -202,7 +202,7 @@ focus = {
 focus = {
 	id = JAP_tank
 	icon = GFX_goal_generic_army_tanks
-	x = 4
+	x = 6
 	y = 1
 	prerequisite = { focus = JAP_army }
 	relative_position_id = JAP_army
@@ -226,8 +226,8 @@ focus = {
 
 focus = {
 	id = JAP_tank2
-	icon = GFX_goal_generic_army_tanks
-	x = 0
+	icon = GFX_focus_generic_tank_production
+	x = -1
 	y = 1
 	prerequisite = { focus = JAP_tank }
 	relative_position_id = JAP_tank
@@ -251,8 +251,8 @@ focus = {
 
 focus = {
 	id = JAP_tank_variant
-	icon = GFX_goal_generic_army_tanks
-	x = 2
+	icon = GFX_focus_generic_army_tanks2
+	x = 1
 	y = 1
 	prerequisite = { focus = JAP_tank }
 	relative_position_id = JAP_tank
@@ -298,7 +298,7 @@ focus = {
 
 focus = {
 	id = JAP_fighter
-	icon = GFX_goal_generic_air_fighter
+	icon = GFX_focus_jap_zero
 	x = -2
 	y = 1
 	cost = 10
@@ -357,7 +357,7 @@ focus = {
 focus = {
 	id = JAP_industry
 	icon = GFX_goal_generic_production
-	x = 21
+	x = 22
 	y = 0
 	cost = 10
 	
@@ -374,7 +374,7 @@ focus = {
 focus = { 
 	id = JAP_construction_effort
 	icon = GFX_goal_generic_construct_civ_factory
-	x = -1
+	x = -2
 	y = 1
 	cost = 10
 	relative_position_id = JAP_industry
@@ -477,7 +477,7 @@ focus = {
 focus = { 
 	id = JAP_construction_effort2
 	icon = GFX_goal_generic_construct_civ_factory
-	x = 0
+	x = 1
 	y = 1
 	cost = 10
 	relative_position_id = JAP_construction_effort
@@ -580,11 +580,11 @@ focus = {
 focus = { 
 	id = JAP_construction_effort3
 	icon = GFX_goal_generic_construct_civ_factory
-	x = 0
-	y = 1
+	x = -2
+	y = 0
 	cost = 10
 	relative_position_id = JAP_construction_effort2
-	prerequisite = { focus = JAP_construction_effort2 }
+	prerequisite = { focus = JAP_construction_effort }
 	
 	completion_reward = {
 			random_owned_controlled_state = {
@@ -683,10 +683,16 @@ focus = {
 focus = {
 	id = JAP_tech_slot
 	icon = GFX_focus_research
-	x = 0
+	x = 3
 	y = 1
 	relative_position_id = JAP_construction_effort3
-	prerequisite = { focus = JAP_construction_effort3 }
+	prerequisite = { 
+		focus = JAP_construction_effort3
+		focus = JAP_construction_effort2 }
+	prerequisite = {
+		focus = JAP_mil3
+		focus = JAP_mil2
+	}
 	cost = 10
 	completion_reward = {
 		add_research_slot = 2
@@ -696,7 +702,7 @@ focus = {
 focus = {
 	id = JAP_mil
 	icon = GFX_goal_generic_construct_mil_factory
-	x = 1
+	x = 2
 	y = 1
 	relative_position_id = JAP_industry
 	prerequisite = { focus = JAP_industry }
@@ -829,7 +835,7 @@ focus = {
 focus = {
 	id = JAP_mil2
 	icon = GFX_goal_generic_construct_mil_factory
-	x = 0
+	x = 1
 	y = 1
 	relative_position_id = JAP_mil
 	prerequisite = { focus = JAP_mil }
@@ -962,10 +968,10 @@ focus = {
 focus = {
 	id = JAP_mil3
 	icon = GFX_goal_generic_construct_mil_factory
-	x = 0
-	y = 1
+	x = -2
+	y = 0
 	relative_position_id = JAP_mil2
-	prerequisite = { focus = JAP_mil2 }
+	prerequisite = { focus = JAP_mil }
 	cost = 10
 	
 	completion_reward = {
@@ -1095,7 +1101,7 @@ focus = {
 	focus = {
 		id = JAP_naval_industry
 		icon = GFX_goal_generic_production
-		x = 26
+		x = 29
 		y = 0
 		cost = 5
 		
@@ -1107,10 +1113,11 @@ focus = {
 	focus = {
 		id = JAP_naval_doctrine
 		icon = GFX_goal_generic_navy_battleship
-		x = 25
+		x = -1
 		y = 1
 		cost = 5
 		
+		relative_position_id = JAP_naval_industry
 		prerequisite = {
 			focus = JAP_naval_industry
 		}
@@ -1128,10 +1135,11 @@ focus = {
 	focus = {
 		id = JAP_marines
 		icon = GFX_goal_generic_amphibious_assault
-		x = 27
+		x = 1
 		y = 1
 		cost = 5
 
+		relative_position_id = JAP_naval_industry		
 		prerequisite = {
 			focus = JAP_naval_industry
 		}
@@ -1147,10 +1155,11 @@ focus = {
 	focus = {
 		id = JAP_open_seas_focus
 		icon = GFX_goal_generic_navy_battleship
-		x = 28 
+		x = 2
 		y = 2
 		cost = 10
 
+		relative_position_id = JAP_naval_industry		
 		prerequisite = {
 			focus = JAP_naval_doctrine
 			focus = JAP_marines
@@ -1190,10 +1199,11 @@ focus = {
 	focus = {
 		id = JAP_carrier_focus
 		icon = GFX_goal_generic_navy_carrier
-		x = 26 
+		x = 0
 		y = 2
 		cost = 10
 
+		relative_position_id = JAP_naval_industry		
 		prerequisite = {
 			focus = JAP_naval_doctrine
 			focus = JAP_marines
@@ -1238,10 +1248,11 @@ focus = {
 	focus = {
 		id = JAP_commerce_raiding_focus
 		icon = GFX_goal_generic_navy_submarine
-		x = 24 
+		x = -2
 		y = 2
 		cost = 10
 
+		relative_position_id = JAP_naval_industry		
 		prerequisite = {
 			focus = JAP_naval_doctrine
 			focus = JAP_marines
