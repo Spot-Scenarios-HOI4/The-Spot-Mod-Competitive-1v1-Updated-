@@ -40,7 +40,7 @@ ideas = {
          }
 
           removal_cost = -1
-          picture = generic_pp_unity_bonus
+          picture = norfolk_naval_yard
 
           modifier = {
 

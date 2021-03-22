@@ -356,7 +356,7 @@ focus = {
 
 focus = {
 	id = JAP_industry
-	icon = GFX_goal_generic_production
+	icon = GFX_focus_generic_the_giant_wakes
 	x = 22
 	y = 0
 	cost = 10
@@ -373,7 +373,7 @@ focus = {
 
 focus = { 
 	id = JAP_construction_effort
-	icon = GFX_goal_generic_construct_civ_factory
+	icon = GFX_focus_generic_industry_1
 	x = -2
 	y = 1
 	cost = 10
@@ -476,7 +476,7 @@ focus = {
 
 focus = { 
 	id = JAP_construction_effort2
-	icon = GFX_goal_generic_construct_civ_factory
+	icon = GFX_focus_generic_industry_2
 	x = 1
 	y = 1
 	cost = 10
@@ -579,7 +579,7 @@ focus = {
 
 focus = { 
 	id = JAP_construction_effort3
-	icon = GFX_goal_generic_construct_civ_factory
+	icon = GFX_focus_generic_industry_3
 	x = -2
 	y = 0
 	cost = 10
@@ -701,7 +701,7 @@ focus = {
 
 focus = {
 	id = JAP_mil
-	icon = GFX_goal_generic_construct_mil_factory
+	icon = GFX_focus_mex_privatisation
 	x = 2
 	y = 1
 	relative_position_id = JAP_industry
@@ -967,7 +967,7 @@ focus = {
 
 focus = {
 	id = JAP_mil3
-	icon = GFX_goal_generic_construct_mil_factory
+	icon = GFX_goal_generic_small_arms
 	x = -2
 	y = 0
 	relative_position_id = JAP_mil2
@@ -1100,7 +1100,7 @@ focus = {
 
 	focus = {
 		id = JAP_naval_industry
-		icon = GFX_goal_generic_production
+		icon = GFX_focus_jap_pacific_guardian
 		x = 29
 		y = 0
 		cost = 5
@@ -1154,7 +1154,7 @@ focus = {
 
 	focus = {
 		id = JAP_open_seas_focus
-		icon = GFX_goal_generic_navy_battleship
+		icon = GFX_focus_generic_navy_battleship2
 		x = 2
 		y = 2
 		cost = 10
