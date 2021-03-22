@@ -3,3 +3,8 @@
  GER_wargoal:0 "Wargoal Against USSR"
  USA_wargoal:0 "Wargoal Against Japan"
  JAP_wargoal:0 "Wargoal Against USA"
+ USA_hyper_naval_cons_disable:0 "Disable Hyper Naval Construction"
+ JAP_hyper_naval_cons_disable:0 "Disable Hyper Naval Construction"
+ USA_hyper_naval_cons_enable:0 "Enable Hyper Naval Construction"
+ JAP_hyper_naval_cons_enable:0 "Enable Hyper Naval Construction"
+ USA_extensive_conscription:0 "Extensive Conscription"

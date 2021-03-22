@@ -13,7 +13,7 @@ set_research_slots = 4
 
 add_ideas = {
 	closed_economy
-	limited_conscription
+	extensive_conscription
 	war_economy
 	hyper_naval_construction
 }

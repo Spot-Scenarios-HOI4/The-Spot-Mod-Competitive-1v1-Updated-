@@ -22,4 +22,50 @@ political_actions = {
 			}
 		}
 	}
+
+	USA_hyper_naval_cons_disable = {
+
+		icon = generic_prospect_for_resources
+
+		fire_only_once = no
+
+		visible = {
+			original_tag = USA
+		}
+
+		available = {
+			USA = { has_idea = hyper_naval_construction }
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = "
+			This is to disable Hyper Naval Construction for more slower paced building of naval assets.
+			"
+			remove_ideas  = hyper_naval_construction
+
+		}
+	}
+
+	USA_hyper_naval_cons_enable = {
+
+		icon = generic_prospect_for_resources
+
+		fire_only_once = no
+
+		visible = {
+			original_tag = USA
+		}
+
+		available = {
+			USA = { NOT = { has_idea = hyper_naval_construction } }
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = "
+			You can re-enable it whenever you'd like.
+			"
+			add_ideas  = hyper_naval_construction
+
+		}
+	}
 }
