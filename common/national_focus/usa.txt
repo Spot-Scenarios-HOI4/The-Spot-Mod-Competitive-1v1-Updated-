@@ -31,7 +31,7 @@ focus_tree = {
 	focus = {
 		id = USA_arty1
 		icon = GFX_goal_generic_army_artillery2
-		x = -6
+		x = -4
 		y = 1
 		relative_position_id = USA_army
 		prerequisite = { focus = USA_army }
@@ -50,7 +50,7 @@ focus_tree = {
 	focus = {
 		id = USA_arty2
 		icon = GFX_goal_generic_army_artillery2
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = USA_arty1
 		prerequisite = { focus = USA_arty1 }
@@ -69,7 +69,7 @@ focus_tree = {
 	focus = {
 		id = USA_arty3
 		icon = GFX_goal_generic_army_artillery2
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = USA_arty1
 		prerequisite = { focus = USA_arty1 }
@@ -88,7 +88,7 @@ focus_tree = {
 	focus = {
 		id = USA_antiair
 		icon = GFX_goal_generic_construct_military
-		x = -2
+		x = -1.5
 		y = 1
 		cost = 5
 		prerequisite = { focus = USA_army }
@@ -145,7 +145,7 @@ focus_tree = {
 	focus = {
 		id = USA_antitank
 		icon = GFX_goal_generic_army_artillery
-		x = 2
+		x = 1.5
 		y = 1
 		cost = 5
 		prerequisite = {focus = USA_army }
@@ -202,7 +202,7 @@ focus_tree = {
 	focus = {
 		id = USA_tank
 		icon = GFX_goal_generic_army_tanks
-		x = 6
+		x = 4
 		y = 1
 		prerequisite = { focus = USA_army }
 		relative_position_id = USA_army
@@ -227,7 +227,7 @@ focus_tree = {
 	focus = {
 		id = USA_tank2
 		icon = GFX_focus_generic_tank_production
-		x = -1
+		x = 0
 		y = 1
 		prerequisite = { focus = USA_tank }
 		relative_position_id = USA_tank
@@ -252,7 +252,7 @@ focus_tree = {
 	focus = {
 		id = USA_tank_variant
 		icon = GFX_focus_usa_tank_destroyer_doctrine
-		x = 1
+		x = 2
 		y = 1
 		prerequisite = { focus = USA_tank }
 		relative_position_id = USA_tank
@@ -1102,7 +1102,7 @@ focus_tree = {
 			id = USA_naval_industry
 			icon = GFX_focus_usa_recruit_the_free_corps
 			x = 29
-			y = 0
+			y = 2
 			cost = 5
 			
 			completion_reward = {
