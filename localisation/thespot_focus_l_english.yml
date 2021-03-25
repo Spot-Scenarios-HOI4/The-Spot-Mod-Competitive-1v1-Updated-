@@ -104,7 +104,7 @@
  USA_antitank2:0 "Anti Tank 2"
  USA_antitank3:0 "Anti Tank 3"
  USA_tank:0 "Tank Focus"
- USA_tank2:0 "Tank Focus 2"
+ USA_medium_armament:0 "Medium Armament"
  USA_tank_variant:0 "Tank Variants"
   USA_amphibious_tanks:0 "Amphibious Tanks"
   USA_tank_destroyer:0 "Tank Destroyer"

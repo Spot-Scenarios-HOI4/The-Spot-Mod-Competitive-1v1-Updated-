@@ -1,0 +1,15 @@
+#on_actions = {
+#	on_startup = {	
+#		effect = {
+#			 TAG = { country_event = { id = usa.100 } }
+#		}
+#	}
+#}
+#	
+#on_actions = {
+#	on_startup = {	
+#		effect = {
+#			 TAG = { country_event = { id = japan.100 } }
+#		}
+#	}
+#}
