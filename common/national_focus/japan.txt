@@ -1,5 +1,5 @@
 focus_tree = {
-	id = japan_focus
+	id = JAP_focus
 	country = {
 		factor = 0
 		
@@ -11,1098 +11,1322 @@ focus_tree = {
 	
 	default = no
 
-focus = {
-	id = JAP_army
-	icon = GFX_goal_generic_allies_build_infantry
-	x = 4
-	y = 0
-	cost = 5
-	
-	completion_reward = {
-		add_tech_bonus = {
-			name = land_doc_bonus
-			bonus = 20
-			uses = 10
-			category = land_doctrine
+	focus = {
+		id = JAP_army
+		icon = GFX_focus_jap_spiritual_mobilization
+		x = -2
+		y = 0
+		cost = 5
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 20
+				uses = 10
+				category = land_doctrine
+			}
 		}
 	}
-}
-
-focus = {
-	id = JAP_arty1
-	icon = GFX_goal_generic_army_artillery2
-	x = -6
-	y = 1
-	relative_position_id = JAP_army
-	prerequisite = { focus = JAP_army }
-	cost = 5
 	
-	completion_reward = {
-		add_tech_bonus = {
-			name = arty1
-			ahead_reduction = 6
-			uses = 1
-			technology = artillery3
+	focus = {
+		id = JAP_arty1
+		icon = GFX_goal_generic_army_artillery
+		x = -5
+		y = 1
+		relative_position_id = JAP_army
+		prerequisite = { focus = JAP_army }
+		cost = 5
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = arty1
+				ahead_reduction = 6
+				uses = 1
+				technology = artillery3
+			}
 		}
 	}
-}
-
-focus = {
-	id = JAP_arty2
-	icon = GFX_goal_generic_army_artillery2
-	x = -1
-	y = 1
-	relative_position_id = JAP_arty1
-	prerequisite = { focus = JAP_arty1 }
-	cost = 5
 	
-	completion_reward = {
-		add_tech_bonus = {
-			name = arty2
-			ahead_reduction = 6
-			uses = 1
-			technology = artillery4
+	focus = {
+		id = JAP_arty2
+		icon = GFX_goal_generic_army_artillery2
+		x = -2
+		y = 1
+		relative_position_id = JAP_arty1
+		prerequisite = { focus = JAP_arty1 }
+		cost = 5
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = arty2
+				ahead_reduction = 6
+				uses = 1
+				technology = artillery4
+			}
 		}
 	}
-}
-
-focus = {
-	id = JAP_arty3
-	icon = GFX_goal_generic_army_artillery2
-	x = 1
-	y = 1
-	relative_position_id = JAP_arty1
-	prerequisite = { focus = JAP_arty1 }
-	cost = 5
 	
-	completion_reward = {
-		add_tech_bonus = {
-			name = arty3
-			ahead_reduction = 6
-			uses = 1
-			technology = artillery5
+	focus = {
+		id = JAP_arty3
+		icon = GFX_goal_generic_army_artillery2
+		x = 0
+		y = 1
+		relative_position_id = JAP_arty1
+		prerequisite = { focus = JAP_arty1 }
+		cost = 5
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = arty3
+				ahead_reduction = 6
+				uses = 1
+				technology = artillery5
+			}
 		}
 	}
-}
-
-focus = {
-	id = JAP_antiair
-	icon = GFX_goal_generic_construct_military
-	x = -2
-	y = 1
-	cost = 5
-	prerequisite = { focus = JAP_army }
-	relative_position_id = JAP_army
 	
-	completion_reward = {
-		add_tech_bonus = {
-			name = antiair
-			ahead_reduction = 6
-			uses = 1
-			technology = antiair3
+	focus = {
+		id = JAP_antiair
+		icon = GFX_focus_generic_air_defense
+		x = -2
+		y = 1
+		cost = 5
+		prerequisite = { focus = JAP_army }
+		relative_position_id = JAP_army
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = antiair
+				ahead_reduction = 6
+				uses = 1
+				technology = antiair3
+			}
 		}
 	}
-}
-
-focus = {
-	id = JAP_antiair2
-	icon = GFX_goal_generic_construct_military
-	x = 1
-	y = 1
-	cost = 5
-	prerequisite = { focus = JAP_antiair }
-	relative_position_id = JAP_antiair
 	
-	completion_reward = {
-		add_tech_bonus = {
-			name = antiair2
-			ahead_reduction = 6
-			uses = 1
-			technology = antiair4
+	focus = {
+		id = JAP_antiair2
+		icon = GFX_goal_generic_construct_military
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = JAP_antiair }
+		relative_position_id = JAP_antiair
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = antiair2
+				ahead_reduction = 6
+				uses = 1
+				technology = antiair4
+			}
 		}
 	}
-}
-
-focus = {
-	id = JAP_antiair3
-	icon = GFX_goal_generic_construct_military
-	x = -1
-	y = 1
-	cost = 5
-	prerequisite = { focus = JAP_antiair }
-	relative_position_id = JAP_antiair
 	
-	completion_reward = {
-		add_tech_bonus = {
-			name = antiair3
-			ahead_reduction = 6
-			uses = 1
-			technology = antiair5
+	focus = {
+		id = JAP_antiair3
+		icon = GFX_goal_generic_fortify_city
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = JAP_antiair }
+		relative_position_id = JAP_antiair
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = antiair3
+				ahead_reduction = 6
+				uses = 1
+				technology = antiair5
+			}
 		}
 	}
-}
-
-focus = {
-	id = JAP_antitank
-	icon = GFX_goal_generic_army_artillery
-	x = 2
-	y = 1
-	cost = 5
-	prerequisite = {focus = JAP_army }
-	relative_position_id = JAP_army
 	
-	completion_reward = {
-		add_tech_bonus = {
-			name = AT
-			ahead_reduction = 6
-			uses = 1
-			category = cat_anti_tank
+	focus = {
+		id = JAP_antitank
+		icon = GFX_goal_generic_build_tank
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite = {focus = JAP_army }
+		relative_position_id = JAP_army
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = AT
+				ahead_reduction = 6
+				uses = 1
+				category = cat_anti_tank
+			}
 		}
 	}
-}
-
-focus = {
-	id = JAP_antitank2
-	icon = GFX_goal_generic_army_artillery
-	x = 1
-	y = 1
-	cost = 5
-	prerequisite = {focus = JAP_antitank }
-	relative_position_id = JAP_antitank
 	
-	completion_reward = {
-		add_tech_bonus = {
-			name = AT2
-			ahead_reduction = 6
-			uses = 1
-			category = cat_anti_tank
+	focus = {
+		id = JAP_antitank2
+		icon = GFX_goal_generic_army_artillery
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = {focus = JAP_antitank }
+		relative_position_id = JAP_antitank
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = AT2
+				ahead_reduction = 6
+				uses = 1
+				category = cat_anti_tank
+			}
 		}
 	}
-}
-
-focus = {
-	id = JAP_antitank3
-	icon = GFX_goal_generic_army_artillery
-	x = -1
-	y = 1
-	cost = 5
-	prerequisite = {focus = JAP_antitank }
-	relative_position_id = JAP_antitank
 	
-	completion_reward = {
-		add_tech_bonus = {
-			name = AT3
-			ahead_reduction = 6
-			uses = 1
-			category = cat_anti_tank
+	focus = {
+		id = JAP_antitank3
+		icon = GFX_goal_generic_army_artillery
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = {focus = JAP_antitank }
+		relative_position_id = JAP_antitank
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = AT3
+				ahead_reduction = 6
+				uses = 1
+				category = cat_anti_tank
+			}
 		}
 	}
-}
-
-focus = {
-	id = JAP_tank
-	icon = GFX_goal_generic_army_tanks
-	x = 6
-	y = 1
-	prerequisite = { focus = JAP_army }
-	relative_position_id = JAP_army
-	cost = 10
 	
-	completion_reward = {
-		add_tech_bonus = {
-			name = tank
-			ahead_reduction = 6
-			uses = 1
-				technology = improved_medium_tank
-				technology = advanced_medium_tank
+	focus = {
+		id = JAP_tank
+		icon = GFX_goal_generic_army_tanks
+		x = 7
+		y = 1
+		prerequisite = { focus = JAP_army }
+		relative_position_id = JAP_army
+		cost = 5
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = tank
+				ahead_reduction = 6
+				uses = 1
+					technology = improved_medium_tank
+					technology = advanced_medium_tank
+					technology = main_battle_tank
+					technology = basic_heavy_tank
+					technology = improved_heavy_tank
+					technology = advanced_heavy_tank
+					category = cat_light_armor
+			}
+		}
+	}
+	
+	#Tank Branch - Medium Tanks
+	focus = {
+		id = JAP_medium_armament
+		icon = GFX_focus_generic_tank_production
+		x = -2
+		y = 1
+		prerequisite = { focus = JAP_tank }
+		relative_position_id = JAP_tank
+		cost = 3
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = tank_medium
+				bonus = 3
+				uses = 2
+					technology = improved_medium_tank
+					technology = advanced_medium_tank
+					
+					category = cat_light_armor
+			}
+		}
+	}
+
+    #Tank Branch - Heavy Branch
+	focus = {
+		id = JAP_heavy_armament
+		icon = GFX_focus_generic_tank_production
+		x = 2
+		y = 1
+		prerequisite = { focus = JAP_tank }
+		relative_position_id = JAP_tank
+		cost = 3
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = tank_heavy
+				bonus = 3
+				uses = 2
+					technology = improved_heavy_tank
+					technology = advanced_heavy_tank
+					
+					category = cat_light_armor
+			}
+		}
+	}
+	
+	#Tank Branch - MBT Branch
+	focus = {
+		id = JAP_tank_modernization
+		icon = GFX_focus_generic_tank_production
+		x = 0
+		y = 3
+		prerequisite = { 
+			focus = JAP_heavy_armament
+		}
+		prerequisite = {
+			focus = JAP_medium_armament
+		}
+		relative_position_id = JAP_tank
+		cost = 10
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = tank_mbt
+				bonus = 2
+				uses = 1
 				technology = main_battle_tank
-				technology = basic_heavy_tank
-				technology = improved_heavy_tank
-				technology = advanced_heavy_tank
-				category = cat_light_armor
+			}
 		}
 	}
-}
 
-focus = {
-	id = JAP_tank2
-	icon = GFX_focus_generic_tank_production
-	x = -1
-	y = 1
-	prerequisite = { focus = JAP_tank }
-	relative_position_id = JAP_tank
-	cost = 10
-	
-	completion_reward = {
-		add_tech_bonus = {
-			name = tank2
-			bonus = 3
-			uses = 1
-				technology = improved_medium_tank
-				technology = advanced_medium_tank
-				technology = main_battle_tank
-				technology = basic_heavy_tank
-				technology = improved_heavy_tank
-				technology = advanced_heavy_tank
-				category = cat_light_armor
-		}
-	}
-}
+	#Tank Branch - Variant Branch
+	focus = {
+		id = JAP_tank_variant
+		icon = GFX_focus_usa_tank_destroyer_doctrine
+		x = 5
+		y = 2
+		prerequisite = { focus = JAP_tank }
+		relative_position_id = JAP_tank
+		cost = 5
 
-focus = {
-	id = JAP_tank_variant
-	icon = GFX_focus_generic_army_tanks2
-	x = 1
-	y = 1
-	prerequisite = { focus = JAP_tank }
-	relative_position_id = JAP_tank
-	cost = 10
-	
-	completion_reward = {
-		add_tech_bonus = {
-			name = tank_variant
-			bonus = 3
-			uses = 2
-				technology = improved_medium_td
-				technology = improved_medium_art
-				technology = improved_medium_spaa
-				technology = advanced_medium_td
-				technology = advanced_medium_art
-				technology = advanced_medium_spaa
-				technology = improved_heavy_td
-				technology = improved_heavy_art
-				technology = improved_heavy_spaa
-				technology = advanced_heavy_td
-				technology = advanced_heavy_art
-				technology = advanced_heavy_spaa
-		}
-	}
-}
-
-focus = {
-	id = JAP_air
-	icon = GFX_goal_generic_build_airforce
-	x = 15
-	y = 0
-	cost = 5
-	
-	completion_reward = {
-		add_tech_bonus = {
-			name = air_doctrine
-			bonus = 20
-			uses = 11
-			category = air_doctrine
-		}
-	}
-}
-
-focus = {
-	id = JAP_fighter
-	icon = GFX_focus_jap_zero
-	x = -2
-	y = 1
-	cost = 10
-	prerequisite = { focus = JAP_air }
-	relative_position_id = JAP_air
-	
-	completion_reward = {
-		add_tech_bonus = {
-			name = fighter_bonus
-			bonus = 3
-			uses = 1
-			technology = fighter3
-		}
-	}
-}
-
-focus = {
-	id = JAP_cas
-	icon = GFX_goal_generic_CAS
-	x = 0
-	y = 1
-	cost = 10
-	prerequisite = { focus = JAP_air }
-	relative_position_id = JAP_air
-	
-	completion_reward = {
-		add_tech_bonus = {
-			name = cas_bonus
-			bonus = 3
-			uses = 1
-			category = cas_bomber
-			
-		}
-	}
-}
-
-focus = {
-	id = JAP_tac
-	icon = GFX_goal_generic_air_bomber
-	x = 2
-	y = 1
-	cost = 10
-	prerequisite = { focus = JAP_air }
-	relative_position_id = JAP_air
-	
-	completion_reward = {
-		add_tech_bonus = {
-			name = tac_bonus
-			bonus = 3
-			uses = 1
-			category = tactical_bomber
-		}
-	}
-}
-
-focus = {
-	id = JAP_industry
-	icon = GFX_focus_generic_the_giant_wakes
-	x = 22
-	y = 0
-	cost = 10
-	
-	completion_reward = {
-		add_tech_bonus = {
-			name = industry
-			bonus = 3
-			uses = 1
-			category = industry
-		}
-	}
-}
-
-focus = { 
-	id = JAP_construction_effort
-	icon = GFX_focus_generic_industry_1
-	x = -2
-	y = 1
-	cost = 10
-	relative_position_id = JAP_industry
-	prerequisite = { focus = JAP_industry }
-	
-	completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-	}
-}
-
-focus = { 
-	id = JAP_construction_effort2
-	icon = GFX_focus_generic_industry_2
-	x = 1
-	y = 1
-	cost = 10
-	relative_position_id = JAP_construction_effort
-	prerequisite = { focus = JAP_construction_effort }
-	
-	completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-	}
-}
-
-focus = { 
-	id = JAP_construction_effort3
-	icon = GFX_focus_generic_industry_3
-	x = -2
-	y = 0
-	cost = 10
-	relative_position_id = JAP_construction_effort2
-	prerequisite = { focus = JAP_construction_effort }
-	
-	completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-	}
-}
-
-focus = {
-	id = JAP_tech_slot
-	icon = GFX_focus_research
-	x = 3
-	y = 1
-	relative_position_id = JAP_construction_effort3
-	prerequisite = { 
-		focus = JAP_construction_effort3
-		focus = JAP_construction_effort2 }
-	prerequisite = {
-		focus = JAP_mil3
-		focus = JAP_mil2
-	}
-	cost = 10
-	completion_reward = {
-		add_research_slot = 2
-	}
-}
-
-focus = {
-	id = JAP_mil
-	icon = GFX_focus_mex_privatisation
-	x = 2
-	y = 1
-	relative_position_id = JAP_industry
-	prerequisite = { focus = JAP_industry }
-	cost = 10
-	
-	completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-	}
-}
-
-focus = {
-	id = JAP_mil2
-	icon = GFX_goal_generic_construct_mil_factory
-	x = 1
-	y = 1
-	relative_position_id = JAP_mil
-	prerequisite = { focus = JAP_mil }
-	cost = 10
-	
-	completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-	}
-}
-
-focus = {
-	id = JAP_mil3
-	icon = GFX_goal_generic_small_arms
-	x = -2
-	y = 0
-	relative_position_id = JAP_mil2
-	prerequisite = { focus = JAP_mil }
-	cost = 10
-	
-	completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
+		completion_reward = {
+			add_tech_bonus = {
+				name = tank_variant_aa
+				bonus = 3
+				uses = 2
+					technology = improved_medium_spaa
+					technology = advanced_medium_spaa
+					technology = improved_heavy_spaa
+					technology = advanced_heavy_spaa
 			}
 		}
 	}
 
 	focus = {
+		id = JAP_amphibious_tanks
+		icon = GFX_focus_generic_amphibious_tanks
+		x = -2
+		y = 1
+		prerequisite = { 
+			focus = JAP_tank_variant
+		}
+		relative_position_id = JAP_tank_variant
+		cost = 2
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = tank_variant_amphib
+				bonus = 3
+				uses = 2
+					technology = amphibious_tank
+					technology = amphibious_tank_2
+			}
+		}
+	}
+	
+	focus = {
+		id = JAP_tank_destroyer
+		icon = GFX_focus_generic_tank_destroyer
+		x = 0
+		y = 1
+		prerequisite = { 
+			focus = JAP_tank_variant
+		}
+		relative_position_id = JAP_tank_variant
+		cost = 2
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = tank_variant_td
+				bonus = 3
+				uses = 2
+					technology = improved_medium_td
+					technology = improved_heavy_td
+					technology = advanced_medium_td
+					technology = advanced_heavy_td
+			}
+		}
+	}
+
+	focus = {
+		id = JAP_tank_artillery
+		icon = GFX_focus_generic_tank_artillery
+		x = 2
+		y = 1
+		prerequisite = { focus = JAP_tank_variant }
+		relative_position_id = JAP_tank_variant
+		cost = 2
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = tank_variant_art
+				bonus = 3
+				uses = 2
+					technology = improved_medium_art
+					technology = advanced_medium_art
+					technology = improved_heavy_art
+					technology = advanced_heavy_art
+			}
+		}
+	}
+
+	## AIR FOCUSES ##
+
+	focus = {
+		id = JAP_air
+		icon = GFX_goal_generic_air_doctrine
+		x = 17
+		y = 0
+		cost = 5
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = air_doctrine
+				bonus = 20
+				uses = 11
+				category = air_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = JAP_light_ordinance
+		icon = GFX_focus_generic_light_ordinance
+		x = -3
+		y = 1
+		cost = 1
+		prerequisite = { focus = JAP_air }
+		relative_position_id = JAP_air
+	}
+	
+	focus = {
+		id = JAP_fighter
+		icon = GFX_focus_jap_zero
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = JAP_light_ordinance }
+		relative_position_id = JAP_light_ordinance
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 3
+				uses = 1
+				technology = fighter3
+			}
+		}
+	}
+	
+	focus = {
+		id = JAP_cas
+		icon = GFX_goal_generic_occupy_start_war
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = JAP_light_ordinance }
+		relative_position_id = JAP_light_ordinance
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = cas_bomber_bonus
+				bonus = 3
+				uses = 1
+				category = cas_bomber
+				
+			}
+		}
+	}
+
+	focus = {
+		id = JAP_nav_bomber
+		icon = GFX_goal_generic_air_naval_bomber
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = JAP_naval_aviation }
+		relative_position_id = JAP_naval_aviation
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_bomber_bonus
+				bonus = 1
+				uses = 1
+				category = naval_bomber
+				
+			}
+		}
+	}
+
+	focus = {
+		id = JAP_naval_ordinance
+		icon = GFX_goal_generic_air_fighter
+		x = 0
+		y = 1
+		cost = 1
+		prerequisite = { focus = JAP_air }
+		relative_position_id = JAP_air
+	}
+	
+	focus = {
+		id = JAP_naval_aviation
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = JAP_naval_ordinance }
+		relative_position_id = JAP_naval_ordinance
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_air_bonus
+				bonus = 3
+				uses = 1
+				category = naval_air
+			}
+		}
+	}
+
+	focus = {
+		id = JAP_heavy_ordinance
+		icon = GFX_goal_generic_air_fighter2
+		x = 3
+		y = 1
+		cost = 1
+		prerequisite = { focus = JAP_air }
+		relative_position_id = JAP_air
+	}
+
+	focus = {
+		id = JAP_escort_fighters
+		icon = GFX_focus_usa_escort_fighters
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = JAP_heavy_ordinance }
+		relative_position_id = JAP_heavy_ordinance
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = heavy_air_bonus
+				bonus = 3
+				uses = 1
+				category = heavy_air
+			}
+		}
+	}
+
+	focus = {
+		id = JAP_tac
+		icon = GFX_goal_generic_air_bomber
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = JAP_heavy_ordinance }
+		relative_position_id = JAP_heavy_ordinance
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = tac_bonus
+				bonus = 3
+				uses = 1
+				category = tactical_bomber
+			}
+		}
+	}
+	
+	focus = {
+		id = JAP_industry
+		icon = GFX_focus_jap_zaibatsu
+		x = 26
+		y = 0
+		cost = 5
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = industry
+				bonus = 3
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	
+	focus = { 
+		id = JAP_construction_effort
+		icon = GFX_focus_generic_industry_1
+		x = -2
+		y = 1
+		cost = 10
+		relative_position_id = JAP_industry
+		prerequisite = { focus = JAP_industry }
+		
+		completion_reward = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industry
+				bonus = 2
+				uses = 2
+				category = industry
+			}
+		}
+	}
+	
+	focus = { 
+		id = JAP_construction_effort2
+		icon = GFX_focus_generic_industry_2
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = JAP_construction_effort
+		prerequisite = { focus = JAP_construction_effort }
+		
+		completion_reward = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industry
+				bonus = 2
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	
+	focus = { 
+		id = JAP_construction_effort3
+		icon = GFX_focus_generic_industry_3
+		x = -2
+		y = 0
+		cost = 10
+		relative_position_id = JAP_construction_effort2
+		prerequisite = { focus = JAP_construction_effort }
+		
+		completion_reward = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industry
+				bonus = 2
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	
+	focus = {
+		id = JAP_tech_slot
+		icon = GFX_focus_research2
+		x = 3
+		y = 1
+		relative_position_id = JAP_construction_effort3
+		prerequisite = { 
+			focus = JAP_construction_effort3
+			focus = JAP_construction_effort2 }
+		prerequisite = {
+			focus = JAP_mil3
+			focus = JAP_mil2
+		}
+		cost = 10
+		completion_reward = {
+			add_research_slot = 2
+		}
+	}
+	
+	focus = {
+		id = JAP_mil
+		icon = GFX_focus_mex_privatisation
+		x = 2
+		y = 1
+		relative_position_id = JAP_industry
+		prerequisite = { focus = JAP_industry }
+		cost = 10
+		
+		completion_reward = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+		}
+	}
+	
+	focus = {
+		id = JAP_mil2
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 1
+		y = 1
+		relative_position_id = JAP_mil
+		prerequisite = { focus = JAP_mil }
+		cost = 10
+		
+		completion_reward = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+		}
+	}
+	
+	focus = {
+		id = JAP_mil3
+		icon = GFX_goal_generic_small_arms
+		x = -2
+		y = 0
+		relative_position_id = JAP_mil2
+		prerequisite = { focus = JAP_mil }
+		cost = 10
+		
+		completion_reward = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+
+	focus = {
 		id = JAP_naval_industry
 		icon = GFX_focus_jap_pacific_guardian
-		x = 29
-		y = 0
+		x = 22
+		y = 4
 		cost = 5
 		
 		completion_reward = {
@@ -1113,7 +1337,7 @@ focus = {
 	focus = {
 		id = JAP_naval_doctrine
 		icon = GFX_goal_generic_navy_battleship
-		x = -1
+		x = -2
 		y = 1
 		cost = 5
 		
@@ -1135,7 +1359,7 @@ focus = {
 	focus = {
 		id = JAP_marines
 		icon = GFX_goal_generic_amphibious_assault
-		x = 1
+		x = 2
 		y = 1
 		cost = 5
 
@@ -1155,7 +1379,7 @@ focus = {
 	focus = {
 		id = JAP_open_seas_focus
 		icon = GFX_focus_generic_navy_battleship2
-		x = 2
+		x = 4
 		y = 2
 		cost = 10
 
@@ -1248,7 +1472,7 @@ focus = {
 	focus = {
 		id = JAP_commerce_raiding_focus
 		icon = GFX_goal_generic_navy_submarine
-		x = -2
+		x = -4
 		y = 2
 		cost = 10
 

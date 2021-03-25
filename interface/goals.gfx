@@ -2096,6 +2096,26 @@ spriteTypes = {
 	}
 
 	SpriteType = { 
+		name = "GFX_focus_generic_amphibious_tanks"
+		texturefile = "gfx/interface/goals/goal_generic_amphibious_tanks.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_generic_light_ordinance"
+		texturefile = "gfx/interface/goals/focus_generic_light_ordinance.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_generic_tank_artillery"
+		texturefile = "gfx/interface/goals/goal_generic_tank_artillery.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_generic_tank_destroyer"
+		texturefile = "gfx/interface/goals/goal_generic_tank_destroyers.dds"
+	}
+
+	SpriteType = { 
 		name = "GFX_focus_BUL_balkan_federation_of_socialist_republics"
 		texturefile = "gfx/interface/goals/focus_BUL_balkan_federation_of_socialist_republics.dds"
 	}

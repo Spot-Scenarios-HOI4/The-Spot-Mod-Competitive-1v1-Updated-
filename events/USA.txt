@@ -1,1 +1,35 @@
-﻿
+﻿#add_namespace = usa
+
+#country_event = { # Welcome to the Spot Modification Updated: Pacific Section
+#	id = usa.100 # Identification of Event
+#	title = "Welcome to the Spot Modification Updated: Pacific Section!" # Title of the Event
+#	desc = usa.100.d # Description of the actual thing. (USING LOCALIZATION FILES)
+#	picture = GFX_report_event_tur_politician_march # Referenced from eventsgfx which will cause the picture to show.
+
+#	is_triggered_only = yes # Can be triggered by a decision if on.
+
+	# Option Decision Section
+
+#	trigger = {
+#		has_decision = 
+#	}
+	
+#	fire_only_once = yes
+
+	#immediate = {
+
+	#}
+
+	#fire_for_sender = no # Makes it so that the person who fired the event to begin with does not see it.
+
+#	option = {
+#		name = "What's new with the mod?"	
+#	}
+
+#	option = {
+#		name = "Alright, let me get started."
+#	}
+#}
+
+# country_event = spot.2
+# country_event = { id = spot.2 days = 146 }

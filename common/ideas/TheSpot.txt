@@ -44,8 +44,8 @@ ideas = {
 
           modifier = {
 
-              industrial_capacity_dockyard = 5.0
-		      navy_refit_speed = 10.0
+              industrial_capacity_dockyard = 2.5
+		      navy_refit_speed = 5.0
           
             }
         }
