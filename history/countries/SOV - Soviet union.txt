@@ -204,34 +204,34 @@ create_corps_commander = {
 	traits = { infantry_officer infantry_leader engineer }
 	skill = 3
 	
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 3
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
 }
 
 create_corps_commander = {
 	name = "Kirill Meretskov"
 		picture = "Portrait_Soviet_Kirill_Meretskov.dds"
 	traits = { infantry_officer infantry_leader engineer }
-	skill = 3
+	skill = 1
 	
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 3
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
 }
 
 create_corps_commander = {
 	name = "Vasily Kuznetsov"
 		picture = "Portrait_Soviet_Vasily_Kuznetsov.dds"
 	traits = { infantry_officer infantry_leader engineer }
-	skill = 3
+	skill = 1
 	
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 3
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
 }
 
 create_corps_commander = {
@@ -239,12 +239,12 @@ create_corps_commander = {
 		picture = "Portrait_Soviet_Andrey_Vlasov.dds"
 	traits = { infantry_officer infantry_leader engineer }
 	id = 412
-	skill = 3
+	skill = 1
 	
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 3
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
 }
 
 create_corps_commander = {
@@ -252,12 +252,12 @@ create_corps_commander = {
 	id = 402
 		picture = "Portrait_Soviet_Konstantin_Rokossovsky.dds"
 	traits = { armor_officer panzer_leader engineer }
-	skill = 3
+	skill = 1
 	
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 3
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
 }
 
 create_field_marshal = {
@@ -265,12 +265,12 @@ create_field_marshal = {
 	id = 405
 		picture = "Portrait_Soviet_Kliment_Voroshilov.dds"
 	traits = { infantry_officer infantry_leader organiser logistics_wizard engineer }
-	skill = 3
+	skill = 2
 
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 3
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
 }
 
 create_navy_leader = {
