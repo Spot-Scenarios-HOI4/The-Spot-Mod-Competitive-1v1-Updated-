@@ -7,5 +7,5 @@ tags={
 	"Map"
 }
 name="The Spot Mod Competitive 1v1 (Updated)"
-supported_version="1.10.7"
+supported_version="1.10.8"
 remote_file_id="2397993123"
